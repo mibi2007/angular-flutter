@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "pushd . cd angular && npm run prebuild && npm run build && popd",
+    "build": "pushd . && cd angular && npm run prebuild && npm run build && popd",
     "deploy": ""
   },
   "repository": {
