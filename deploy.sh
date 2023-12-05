@@ -1,0 +1,1 @@
+pushd . && rm -r firebase/public/* && cp -r angular/dist/angular/browser/* firebase/public/ && cd firebase && firebase deploy && popd

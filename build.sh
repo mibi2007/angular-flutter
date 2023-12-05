@@ -1,0 +1,1 @@
+pushd . && cd angular && npm run prebuild && npm run build && popd
