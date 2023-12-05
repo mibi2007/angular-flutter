@@ -1,12 +1,19 @@
 # ng-flutter
 
-This project is clone from the [code sample of ng-flutter][] from Flutter's team
+__Important:__
+This project is cloned from the [code sample of ng-flutter][] from Flutter's team with some modifications 
+
 This Angular project is a simple example of how Angular and Flutter
 web apps could be integrated, and have them interop.
 
 ## Points of Interest
 
 ### Angular
+
+__Important Change:__ I take out the `/flutter` app folder to the root, after run prebuild will copy the `flutter/build/web` to `angular/flutter`, you can build using 
+```console
+sh build.sh
+```
 
 This repository is a quite standard Angular app. The following changes were made
 to be able to use (and interop) with a Flutter web application:
@@ -33,6 +40,9 @@ going to be embedded in another framework.
 - Look at how `createDartExport` and `broadcastAppEvent` work together to make
   the `_state` controller of the Flutter app available to Angular!
 
+### Firebase
+I use Firebase to test Angular 17 SSR and host the demo here https://mibi-ng-flutter.web.app/
+
 ## How to build the app
 
 ### Requirements
@@ -54,10 +64,12 @@ And Flutter:
 ```
 $ flutter --version
 
-Flutter 3.13.9 • channel stable
-Framework • revision d211f42860 (2 weeks ago) • 2023-10-25 13:42:25 -0700
-Engine • revision 0545f8705d
-Tools • Dart 3.1.5 • DevTools 2.25.0
+Flutter 3.16.2 • channel stable •
+https://github.com/flutter/flutter.git
+Framework • revision 9e1c857886 (5 days ago) •
+2023-11-30 11:51:18 -0600
+Engine • revision cf7a9d0800
+Tools • Dart 3.2.2 • DevTools 2.28.3
 ```
 
 **Ensure `npm`, `ng` and `flutter` are present in your `$PATH`.**
@@ -177,4 +189,4 @@ Let us know by [creating an issue](https://github.com/flutter/samples/issues/new
 
 Thanks!
 
-[code sample of flutter]: https://github.com/flutter/samples/blob/main/web_embedding/ng-flutter
+[code sample of ng-flutter]: https://github.com/flutter/samples/blob/main/web_embedding/ng-flutter
